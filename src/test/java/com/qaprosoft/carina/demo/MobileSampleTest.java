@@ -28,9 +28,9 @@ public class MobileSampleTest extends AbstractTest {
 
 	//@BeforeMethod
 	public void setCustCaps(String jenkinsJobEnvironment) throws Exception{
-		String propFile = propertiesFile(jenkinsJobEnvironment);
+		//String propFile = propertiesFile(jenkinsJobEnvironment);
 		
-		String path = "src/main/resources/m1Cloud/android/"+propFile;
+		String path = "src/main/resources/m1Cloud/android/"+jenkinsJobEnvironment;
 		Properties prop = new Properties();
 		InputStream input = new FileInputStream(path);
 		prop.load(input);
@@ -41,6 +41,9 @@ public class MobileSampleTest extends AbstractTest {
 		capabilities.setCapability("Capability_ApplicationName", prop.getProperty("Capability_ApplicationName"));
 		capabilities.setCapability("Capability_DurationInMinutes", prop.getProperty("Capability_DurationInMinutes"));
 		capabilities.setCapability("Capability_DeviceFullName",prop.getProperty("Capability_DeviceFullName"));
+		/*
+		 * propertirs of carina
+		 */
 		capabilities.setCapability("deviceType",prop.getProperty("deviceType"));
 		capabilities.setCapability("platformName",prop.getProperty("platformName"));
 		capabilities.setCapability("automationName",prop.getProperty("automationName"));
