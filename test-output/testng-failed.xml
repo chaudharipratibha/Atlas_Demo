@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qaprosoft.carina.demo.AmazonTest">
         <methods>
-          <include name="init"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.qaprosoft.carina.demo.AmazonTest -->
     </classes>

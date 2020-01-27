@@ -5,13 +5,13 @@ import org.openqa.selenium.WebDriver;
 import com.qaprosoft.carina.core.gui.AbstractPage;
 
 public abstract class AmazonHomeBase extends AbstractPage{
-	public abstract void signIn() throws InterruptedException;
-	
 
 	public AmazonHomeBase(WebDriver driver) {
 		super(driver);
-		
 	}
+	public abstract void skip() ;
 
+	
+	
 
 }
