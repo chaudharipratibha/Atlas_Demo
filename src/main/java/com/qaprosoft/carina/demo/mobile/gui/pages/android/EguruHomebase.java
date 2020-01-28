@@ -11,4 +11,5 @@ public abstract  class EguruHomebase extends AbstractPage{
 		
 	}
     public abstract void LoginEguru();
+    public abstract void loginbtn();
 }

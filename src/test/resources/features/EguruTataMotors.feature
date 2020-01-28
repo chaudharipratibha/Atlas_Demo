@@ -5,5 +5,6 @@ Feature: login functionality
   @demo @Dev
   Scenario: Verify of login functionality
      Given launch the application
-    When set Username and Password
+    Then set Username and Password
+    Then login
     
